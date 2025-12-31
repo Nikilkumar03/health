@@ -1,0 +1,8 @@
+services:
+  app:
+    image: yourdockerhubusername/port-demo-app:latest
+    build: .
+    environment:
+      APP_PORT: 5000
+    ports:
+      - "8081:5000"
